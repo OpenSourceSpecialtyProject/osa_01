@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
+        android:hint="password"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="287dp" />
 
@@ -57,7 +58,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="id"
         tools:layout_editor_absoluteX="166dp"
         tools:layout_editor_absoluteY="224dp" />
 
