@@ -46,7 +46,7 @@
         android:id="@+id/btn_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="회원가입"
+        android:text="가입하기"
         android:backgroundTint="@color/black"
         android:layout_margin="8dp"
         app:layout_constraintBottom_toBottomOf="parent"

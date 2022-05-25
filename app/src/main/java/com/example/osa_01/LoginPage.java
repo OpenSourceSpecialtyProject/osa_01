@@ -30,19 +30,20 @@ public class LoginPage extends AppCompatActivity {
         mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Firebase");
 
-        mEtEmail = findViewById(R.id.et_email);
-        mEtPwd = findViewById(R.id.et_pwd);
+        mEtEmail = findViewById(R.id.editTextTextPersonName);
+        mEtPwd = findViewById(R.id.editTextTextPassword);
 
-        Button button =findViewById(R.id.Login);
-        Button button1 = findViewById(R.id.Join);
+        Button button =findViewById(R.id.Login);    //로그인버튼
+        Button button1 = findViewById(R.id.Join);   //회원가입버튼
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {  //로그인버튼 눌렀을 때
             @Override
             public void onClick(View view) {
                 //로그인 요청
                 String strEmail = mEtEmail.getText().toString();
                 String strPwd = mEtPwd.getText().toString();
 
+                //로그인하기
                 mFirebaseAuth.signInWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(LoginPage.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -59,11 +60,11 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() { //회원가입버튼 눌렀을 때 JoinPage 액티비티로 이동
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),JoinPage.class); //
-                startActivityForResult(intent,302);
+                Intent intent = new Intent(getApplicationContext(),JoinPage.class); //해당 액티비티로이동
+                startActivity(intent);  //병혁이거 바꿈
             }
         });
     }

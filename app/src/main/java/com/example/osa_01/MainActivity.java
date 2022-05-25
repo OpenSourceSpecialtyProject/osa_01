@@ -6,13 +6,37 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-
+    private DatabaseReference mDatabaseRef; //실시간 데이터베이스 친구
+    private FirebaseAuth mFirebaseAuth; //파이어베이스어스 인증처리하는 친구
+    TextView tv;
+    String email;   //사용자 이메일
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // 메모리에 레이아웃을 올려줌
+
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Firebase");
+
+        if (user != null) {
+            // User is signed in
+            email = user.getEmail();
+        } else {
+            // No user is signed in
+        }
+
+        tv = (TextView)findViewById(R.id.Useremail);    //유저이메일 보여줄거
+        tv.setText(email);  //가져온 유저이메일 세팅
+
 
         Button button1 = findViewById(R.id.RecruitingPageMove);
         button1.setOnClickListener(new View.OnClickListener() {

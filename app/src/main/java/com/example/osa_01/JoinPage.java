@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,8 +15,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class JoinPage extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth; //파이어베이스어스 인증처리하는 친구
@@ -28,40 +32,46 @@ public class JoinPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_page);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Firebase");
+        mFirebaseAuth = FirebaseAuth.getInstance(); //파베 객체받아옴
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Firebase"); //데이터베이스 객체
 
         mEtEmail = findViewById(R.id.et_email);
         mEtPwd = findViewById(R.id.et_pwd);
         mBtnRegister = findViewById(R.id.btn_register);
 
-        mBtnRegister.setOnClickListener(new View.OnClickListener() {
+        mBtnRegister.setOnClickListener(new View.OnClickListener() {    //회원가입버튼눌렀을때
             @Override
             public void onClick(View view) {
                 //회원가입 처리 시작
-                String strEmail = mEtEmail.getText().toString();
+                String strEmail = mEtEmail.getText().toString();    //문자열로 입력값 받아오고
                 String strPwd = mEtPwd.getText().toString();
 
-                //Firebase Auth 진행
+                if(strEmail.equals("")){
+                    Toast.makeText(JoinPage.this, "제대로 입력해라",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                //파베객체받아온거로 Firebase Auth 진행, 유저이메일비번(이메일) 인증해주는거 사용
                 mFirebaseAuth.createUserWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(JoinPage.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
+                        if (task.isSuccessful()){   //결과값(실패햇는지 성공햇는지) task로 던져줌 (성공햇다면)
                             //파이어베이스유저라는 객체를 만들어서 회원가입된 유저를 가져옴
                             FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
-                            UserAccount account = new UserAccount();
-                            account.setIdToken(firebaseUser.getUid());
+                            UserAccount account = new UserAccount();    //프로젝트의 유저어카운트 클래스에서 어카운트 객체 생성
+                            account.setIdToken(firebaseUser.getUid());      //필드 새로 추가함
                             account.setEmailId(firebaseUser.getEmail());    //정확히 로그인된 유저의 이메일 가져옴, 확실한 정보
                             account.setPassword(strPwd);                    //사용자가 입력했던 것을 그대로 가져옴, 정보확인해서 맞는 정보인지 확인하는 단계라 입력정보를 가져옴!
+                            //account.setNickname(strName); //이런식으로 커스터마이징한거 가져오면 될듯
 
-                            //setValue : database에 삽입하는 행위  / 필드값 집어넣는 행위인듯
+                            //setValue : database에 삽입하는 행위  / 유저어카운트키 아래 필드값 집어넣는 행위인듯
                             mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
 
                             //회원가입 성공했을 경우!
                             Toast.makeText(JoinPage.this, "회원가입에 성공하셨습니다",Toast.LENGTH_SHORT).show();
                         }
-                        else{
-                            Toast.makeText(JoinPage.this, "회원가입에 실패하셨습니다",Toast.LENGTH_SHORT).show();
+                        else{   //알아서 중복검사해줌
+                            Toast.makeText(JoinPage.this, "회원가입에 실패하셨습니다.",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
