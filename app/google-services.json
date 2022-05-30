@@ -1,10 +1,40 @@
 {
   "project_info": {
     "project_number": "1081936551890",
+    "firebase_url": "https://osa-01-default-rtdb.firebaseio.com",
     "project_id": "osa-01",
     "storage_bucket": "osa-01.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081936551890:android:fd90af935d43c41159320b",
+        "android_client_info": {
+          "package_name": "cbnu.opensourceproject.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081936551890-l8cev9lkms208rn5r4m963olb8lkg4vh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC84o1UJ7v-7c1rtAb2lR8HbMu7a67VDFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081936551890-l8cev9lkms208rn5r4m963olb8lkg4vh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:1081936551890:android:7cd7dd1c525c6fc059320b",

@@ -23,7 +23,8 @@
             android:exported="false" />
         <activity
             android:name=".RecruitingPage"
-            android:exported="false" />
+            android:exported="false"/>
+
         <activity
             android:name=".LoginPage"
             android:exported="true">
@@ -33,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
