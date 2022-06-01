@@ -1,26 +1,34 @@
 package com.example.osa_01.models;
 
 public class post {
-    private String documentId;
+
+    private String profile;
+    private String UID;
     private String title;
     private String contents;
 
-    public post(){
+    public post(){}
 
-    }
-
-    public post(String documentId, String title, String contents) {
-        this.documentId = documentId;
+    public post(String title, String contents) {
         this.title = title;
-        this.contents = contents;
+        this.contents=contents;
     }
 
-    public String getDocumentId() {
-        return documentId;
+
+    public String getProfile() {
+        return profile;
     }
 
-    public void setDocumentId(String documentId) {
-        this.documentId = documentId;
+    public void setProfile(String profile) {
+        this.profile = profile;
+    }
+
+    public String getUID() {
+        return UID;
+    }
+
+    public void setUID(String UID) {
+        this.UID = UID;
     }
 
     public String getTitle() {
@@ -40,12 +48,4 @@ public class post {
     }
 
 
-    @Override
-    public String toString() {
-        return "post{" +
-                "documentId='" + documentId + '\'' +
-                ", title='" + title + '\'' +
-                ", contents='" + contents + '\'' +
-                '}';
-    }
 }
