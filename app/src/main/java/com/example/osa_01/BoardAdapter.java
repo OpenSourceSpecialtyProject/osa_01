@@ -1,10 +1,12 @@
 package com.example.osa_01;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -54,6 +56,24 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
             //this.bd_UId = itemView.findViewById(R.id.bd_hostID);
             this.bd_contents = itemView.findViewById(R.id.bd_contents);
             this.bd_title = itemView.findViewById(R.id.bd_title);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                private boolean et_artName;   //리사이클러뷰 클릭이벤트 처리 메소드
+                @Override
+                public void onClick(View v) {
+                    int currentPos = getAbsoluteAdapterPosition(); //각 어댑터의 위치 클릭된
+                    Board board = arrayList.get(currentPos);
+
+                    Intent intent =  new Intent(context, BoardInfoActivity.class);   //화면 넘겨주기
+                    intent.putExtra("title", board.getTitle());
+
+                    context.startActivity(intent);
+
+                    Toast.makeText(context, board.getTitle() +
+                            "\n" + board.getContents()
+                            , Toast.LENGTH_SHORT).show();   //해당위치 아이템 클릭시 토스트메시지창 띄우기
+                }
+            });
         }
     }
 }

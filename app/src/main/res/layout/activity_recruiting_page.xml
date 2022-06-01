@@ -54,4 +54,27 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
         android:text="새로고침" />
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="2dp"
+        android:layout_toStartOf="@+id/btn_search"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="0dp"
+        android:text="검색" />
 </RelativeLayout>

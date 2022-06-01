@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Osa_01">
         <activity
+            android:name=".BoardInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".JoinPage"
             android:exported="false" />
         <activity
@@ -23,8 +26,7 @@
             android:exported="false" />
         <activity
             android:name=".RecruitingPage"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".LoginPage"
             android:exported="true">
@@ -34,7 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
