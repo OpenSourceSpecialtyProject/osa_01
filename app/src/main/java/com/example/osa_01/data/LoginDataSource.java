@@ -1,4 +1,4 @@
-package com.example.specializeproject.data;
+package com.example.osa_01.data;
 
 import com.example.specializeproject.data.model.LoggedInUser;
 
