@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class Mymenu extends AppCompatActivity {
-    private RecyclerView recyclerView;
+        private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<Board> arrayList2;
