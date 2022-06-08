@@ -14,7 +14,7 @@
             android:exported="false" />
         <activity
             android:name=".Mymenu"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".BoardInfoActivity"
             android:exported="false" />
@@ -34,8 +34,16 @@
             android:name=".RecruitingPage"
             android:exported="false" />
         <activity
+            android:name=".ViewPost"
+            android:exported="false"/>
+        <activity
+            android:name=".WritePostPage"
+            android:exported="false"/>
+
+        <activity
             android:name=".LoginPage"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,5 +51,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

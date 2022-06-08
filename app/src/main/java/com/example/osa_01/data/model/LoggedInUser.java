@@ -1,4 +1,4 @@
-package com.example.specializeproject.data.model;
+package  com.example.osa_01.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

@@ -1,6 +1,7 @@
-package com.example.osa_01.data;
+package  com.example.osa_01.data;
 
-import com.example.specializeproject.data.model.LoggedInUser;
+import com.example.osa_01.data.model.LoggedInUser;
+
 
 import java.io.IOException;
 
@@ -17,9 +18,9 @@ public class LoginDataSource {
                     new LoggedInUser(
                             java.util.UUID.randomUUID().toString(),
                             "Jane Doe");
-            return new Result.Success<>(fakeUser);
+            return new com.example.osa_01.data.Result.Success<>(fakeUser);
         } catch (Exception e) {
-            return new Result.Error(new IOException("Error logging in", e));
+            return new com.example.osa_01.data.Result.Error(new IOException("Error logging in", e));
         }
     }
 
