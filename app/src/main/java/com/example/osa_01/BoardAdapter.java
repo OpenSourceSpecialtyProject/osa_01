@@ -65,13 +65,14 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
                     Board board = arrayList.get(currentPos);
 
                     Intent intent =  new Intent(context, BoardInfoActivity.class);   //화면 넘겨주기
-                    intent.putExtra("title", board.getTitle());
+                    intent.putExtra("title", String.valueOf(board.getBoard_number()));
 
                     context.startActivity(intent);
 
+                    /*
                     Toast.makeText(context, board.getTitle() +
                             "\n" + board.getContents()
-                            , Toast.LENGTH_SHORT).show();   //해당위치 아이템 클릭시 토스트메시지창 띄우기
+                            , Toast.LENGTH_SHORT).show();*/   //해당위치 아이템 클릭시 토스트메시지창 띄우기
                 }
             });
         }

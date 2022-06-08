@@ -55,5 +55,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent,102);
             }
         });
+
+        Button btn_menu = findViewById(R.id.btn_menu);
+        btn_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),Mymenu.class); //
+                startActivityForResult(intent,102);
+            }
+        });
     }
 }

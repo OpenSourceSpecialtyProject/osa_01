@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Osa_01">
         <activity
+            android:name=".ApplicantManagement"
+            android:exported="false" />
+        <activity
+            android:name=".Mymenu"
+            android:exported="false"></activity>
+        <activity
             android:name=".BoardInfoActivity"
             android:exported="false" />
         <activity
