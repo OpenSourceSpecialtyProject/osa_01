@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/drawable/border.xml" value="0.248" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_applicant_management.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_board_info.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_community_page.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_recruiting_page.xml" value="0.12335359675785208" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_write_post_page.xml" value="0.2390625" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/board_item.xml" value="0.12335359675785208" />
         <entry key="..\:/Users/ybh03/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_community_page.xml" value="0.5" />
         <entry key="..\:/Users/ybh03/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_create_recruitment_page.xml" value="0.5489583333333333" />
         <entry key="..\:/Users/ybh03/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.5489583333333333" />
