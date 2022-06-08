@@ -40,7 +40,7 @@ public class CommunityPage extends AppCompatActivity  {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),WritePostPage.class); //
+                Intent intent = new Intent(getApplicationContext(),WritePostPage.class); //버튼 클릭시
                 startActivityForResult(intent,222);
             }
         });
