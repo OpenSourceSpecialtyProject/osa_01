@@ -6,36 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageButton
         android:id="@+id/RecruitingPageMove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="332dp"
         android:adjustViewBounds="true"
         android:maxWidth="180dp"
         android:maxHeight="180dp"
         android:scaleType="fitCenter"
         android:src="@drawable/recruiting"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="40dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="24dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageButton
         android:id="@+id/CommunityPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="332dp"
         android:adjustViewBounds="true"
         android:maxWidth="180dp"
         android:maxHeight="180dp"
         android:scaleType="fitCenter"
         android:src="@drawable/community"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="40dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="24dp"/>
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
@@ -58,4 +56,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마이메뉴"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
