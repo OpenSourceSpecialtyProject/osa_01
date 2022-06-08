@@ -41,7 +41,7 @@ public class CommunityPage extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),WritePostPage.class); //
-                startActivityForResult(intent,111);
+                startActivityForResult(intent,222);
             }
         });
 
