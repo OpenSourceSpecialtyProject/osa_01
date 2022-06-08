@@ -38,8 +38,8 @@ public class JoinPage extends AppCompatActivity {
 
         mEtEmail = findViewById(R.id.et_email);
         mEtPwd = findViewById(R.id.et_pwd);
-        mEtPwdcheck = findViewById(R.id.et_pw_ck);
-        mEtNickname = findViewById(R.id.et_nickname);
+        mEtPwdcheck = findViewById(R.id.et_pwdChk);
+        mEtNickname = findViewById(R.id.et_nickName);
         mEtBirth = findViewById(R.id.et_birth);
 
         mBtnRegister = findViewById(R.id.btn_register);
