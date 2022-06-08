@@ -1,4 +1,4 @@
-package com.example.specializeproject.data;
+package com.example.osa_01.data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.
