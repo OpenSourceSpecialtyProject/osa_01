@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -69,7 +70,7 @@ public class RecruitingPage extends AppCompatActivity {
         });
 
         //인원모집 작성 액티비티 넘어가는 기능
-        Button button1 = findViewById(R.id.CreateRecruitment);
+        FloatingActionButton button1 = findViewById(R.id.CreateRecruitment);
         button1.setOnClickListener(new View.OnClickListener() { //모집글 작성 페이지 넘어감
             @Override
             public void onClick(View view) {
