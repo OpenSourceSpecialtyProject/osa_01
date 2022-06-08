@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Osa_01">
         <activity
+            android:name=".ViewPost"
+            android:exported="false" />
+        <activity
             android:name=".WritePostPage"
             android:exported="false" />
         <activity
