@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Osa_01">
         <activity
-            android:name=".ViewPost"
+            android:name=".ApplicantManagement"
             android:exported="false" />
         <activity
-            android:name=".WritePostPage"
+            android:name=".Mymenu"
+            android:exported="false"></activity>
+        <activity
+            android:name=".BoardInfoActivity"
             android:exported="false" />
         <activity
             android:name=".JoinPage"
@@ -40,5 +43,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
