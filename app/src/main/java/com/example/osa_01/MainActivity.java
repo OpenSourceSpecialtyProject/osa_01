@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(email);  //가져온 유저이메일 세팅
 
 
-        Button button1 = findViewById(R.id.RecruitingPageMove);
+        ImageButton button1 = findViewById(R.id.RecruitingPageMove);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button2 = findViewById(R.id.CommunityPage);
+        ImageButton button2 = findViewById(R.id.CommunityPage);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
