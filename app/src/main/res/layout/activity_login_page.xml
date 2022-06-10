@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DBE0FF"
     tools:context=".LoginPage">
 
     <ImageView
@@ -32,7 +33,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.50">
+        app:layout_constraintVertical_bias="0.60">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPersonName"
@@ -40,6 +41,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
@@ -51,7 +53,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65">
+        app:layout_constraintVertical_bias="0.720">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPassword"
@@ -62,36 +64,45 @@
 
     <Button
         android:id="@+id/Login"
-        android:layout_width= "250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
         android:text="로그인"
+        android:fontFamily="@font/jua_regular"
         android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"/>
+        app:layout_constraintVertical_bias="0.837" />
 
     <Button
         android:id="@+id/Join"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="회원가입"
+        android:fontFamily="@font/jua_regular"
         android:textAppearance="?android:textAppearanceLarge"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83"/>
+        app:layout_constraintVertical_bias="0.837" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

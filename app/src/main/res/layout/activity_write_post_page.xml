@@ -16,16 +16,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
             android:text="제목"/>
 
         <EditText
             android:id="@+id/title_et"
             android:padding="16dp"
-            android:background="#eeeeee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/border"
             android:hint="제목을 입력하세요."
             />
     </LinearLayout>
@@ -34,6 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         android:text="내용"/>
 
     <EditText
@@ -42,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#eeeeee"
+        android:background="@drawable/border"
         android:hint="내용을 입력하세요."
         />
 
@@ -51,8 +55,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="등록하기"
+        android:padding="10dp"
         android:textColor="#FFFFFF"
-        android:background="#C62828"/>
-
+        android:backgroundTint="#A9C5DB"/>
 
 </LinearLayout>
