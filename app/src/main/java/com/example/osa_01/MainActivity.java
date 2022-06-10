@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
             // No user is signed in
         }
 
-        tv = (TextView)findViewById(R.id.Useremail);    //유저이메일 보여줄거
-        tv.setText(email);  //가져온 유저이메일 세팅
+//        tv = (TextView)findViewById(R.id.Useremail);    //유저이메일 보여줄거
+//        tv.setText(email);  //가져온 유저이메일 세팅
 
 
         ImageButton button1 = findViewById(R.id.RecruitingPageMove);

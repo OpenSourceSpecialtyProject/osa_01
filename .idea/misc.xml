@@ -4,6 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_applicant_management.xml" value="0.2390625" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/font/font.xml" value="0.5748717948717949" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_join_page.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_main.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/drawable-v24/buttonshape.xml" value="0.252" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/drawable/border.xml" value="0.248" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_applicant_management.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_board_info.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_community_page.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_create_recruitment_page.xml" value="0.1" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_join_page.xml" value="0.12335359675785208" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_recruiting_page.xml" value="0.12335359675785208" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_view_post.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_write_post_page.xml" value="0.2390625" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/applicant_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/board_item.xml" value="0.12335359675785208" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/item_post.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/mymenu.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/mymenu_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/ybh03/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_community_page.xml" value="0.5" />
         <entry key="..\:/Users/ybh03/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_create_recruitment_page.xml" value="0.5489583333333333" />
         <entry key="..\:/Users/ybh03/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.5489583333333333" />
@@ -35,11 +56,14 @@
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/test_list.xml" value="0.20833333333333334" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/test_main.xml" value="0.2526041666666667" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_join_page.xml" value="0.1" />
+        <entry key="..\:/user/osa_01/app/src/main/res/drawable/border.xml" value="0.155" />
+        <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_join_page.xml" value="0.2" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.22887323943661972" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_recruiting_page.xml" value="0.223731884057971" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/applicant_item.xml" value="0.223731884057971" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/board_item.xml" value="0.223731884057971" />
+        <entry key="..\:/user/osa_01/app/src/main/res/layout/item_post.xml" value="0.2" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/mymenu.xml" value="0.223731884057971" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/mymenu_item.xml" value="0.223731884057971" />
         <entry key="..\:/user/osa_02/app/src/main/res/layout/activity_join_page.xml" value="0.25364583333333335" />
@@ -52,5 +76,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.25364583333333335" />
+      </ProjectState>
+    </option>
   </component>
 </project>

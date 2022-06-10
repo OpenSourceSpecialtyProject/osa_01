@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DBE0FF"
     tools:context=".RecruitingPage">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -11,13 +12,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        app:backgroundTint="#2F3FA8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/ic_baseline_add_24" />
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        app:tint="@android:color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_refresh"
@@ -36,7 +40,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Title"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toStartOf="@+id/btn_search"
@@ -54,22 +58,35 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_refresh"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="343dp"
+        android:text="글 목록"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="39dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="25dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/CreateRecruitment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_search">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
