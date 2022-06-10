@@ -12,14 +12,12 @@
             android:id="@+id/bd_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
             android:text="방제" />
-        <TextView
-            android:id="@+id/bd_contents"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="컨텐츠내용" />
+
 
     </LinearLayout>
 
