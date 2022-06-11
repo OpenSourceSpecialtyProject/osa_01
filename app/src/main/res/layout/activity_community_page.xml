@@ -4,28 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DBE0FF"
     tools:context=".CommunityPage">
 
     <TextView
         android:id="@+id/communityLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="327dp"
-        android:text="게시글 목록"
+        android:fontFamily="@font/jua_regular"
+        android:text="글목록"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginBottom="39dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="25dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/WritePost"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

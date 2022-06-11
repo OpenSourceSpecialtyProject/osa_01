@@ -1,39 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DBE0FF"
     android:orientation="vertical"
-    tools:context=".ViewPost" >
+    tools:context=".ViewPost">
 
     <TextView
         android:id="@+id/viewpostTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="48sp" />
+        android:fontFamily="@font/jua_regular"
+        android:padding="5dp"
+        android:text="제목"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/viewPostUid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua_regular"
+        android:padding="5dp"
+        android:text="작성자"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpostTitle" />
 
     <TextView
         android:id="@+id/viewPostContents"
         android:layout_width="match_parent"
         android:layout_height="273dp"
-        android:textSize="20sp" />
+        android:background="@drawable/border"
+        android:fontFamily="@font/jua_regular"
+        android:padding="10dp"
+        android:text="내용"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPostUid" />
 
     <TextView
         android:id="@+id/replyView"
         android:layout_width="match_parent"
-        android:layout_height="52dp" />
+        android:layout_height="325dp"
+        android:fontFamily="@font/jua_regular"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPostContents" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <EditText
             android:id="@+id/replyEdit"
@@ -41,7 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/replyUpload"
@@ -50,4 +82,4 @@
             android:layout_weight="1"
             android:text="Button" />
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

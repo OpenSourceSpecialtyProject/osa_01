@@ -34,7 +34,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     @Override
     public void onBindViewHolder(@NonNull PostViewHolder holder, int position) { // 각 아이템에 대한 실질적인 매칭
         holder.tv_title.setText(arrayList.get(position).getTitle());
-        holder.tv_contents.setText(arrayList.get(position).getContents());
+//        holder.tv_contents.setText(arrayList.get(position).getContents());
     }
 
     @Override
@@ -49,7 +49,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             super(itemView);
 
             this.tv_title = itemView.findViewById(R.id.tv_title);
-            this.tv_contents = itemView.findViewById(R.id.tv_contents);
+//            this.tv_contents = itemView.findViewById(R.id.tv_contents);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -31,7 +31,7 @@ public class ViewPost extends AppCompatActivity {
 
         title.setText(vTitle);
         contents.setText(vContents);
-        uid.setText(vUid);
+        uid.setText("작성자: " + vUid);
 
         reply = findViewById(R.id.replyEdit);
         Button button = findViewById(R.id.replyUpload);
