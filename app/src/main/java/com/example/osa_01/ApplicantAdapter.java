@@ -54,11 +54,11 @@ public class ApplicantAdapter extends RecyclerView.Adapter<ApplicantAdapter.Appl
                 //private boolean et_artName;   //리사이클러뷰 클릭이벤트 처리 메소드
                 @Override
                 public void onClick(View v) {
-                    int currentPos = getAbsoluteAdapterPosition(); //각 어댑터의 위치 클릭된
-                    Board board = arrayList2.get(currentPos);
+                    //int currentPos = getAbsoluteAdapterPosition(); //각 어댑터의 위치 클릭된
+                    //Board board = arrayList2.get(currentPos);
 
-                    Intent intent =  new Intent(context, ApplicantManagement.class);   //화면 넘겨주기
-                    intent.putExtra("title", String.valueOf(board.getBoard_number()));
+                    Intent intent =  new Intent(context, TempActivity.class);   //화면 넘겨주기
+                    //intent.putExtra("board_num", String.valueOf(board.getBoard_number()));
 
                     context.startActivity(intent);
 

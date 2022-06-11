@@ -10,10 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Osa_01">
         <activity
+            android:name=".TempActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChatMain"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".ApplicantManagement"
             android:exported="false" />
