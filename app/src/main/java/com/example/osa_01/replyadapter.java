@@ -12,13 +12,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
+public class replyadapter extends RecyclerView.Adapter<replyadapter.PostViewHolder> {
 
-    private ArrayList<Post> arrayList;
+    private ArrayList<reply> arrayList;
     private Context context;
     private String title, content, Uid;
 
-    public PostAdapter(ArrayList<Post> arrayList, Context context) {
+    public replyadapter(ArrayList<reply> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
@@ -34,7 +34,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     @Override
     public void onBindViewHolder(@NonNull PostViewHolder holder, int position) { // 각 아이템에 대한 실질적인 매칭
         holder.tv_title.setText(arrayList.get(position).getTitle());
-//        holder.tv_contents.setText(arrayList.get(position).getContents());
+        holder.tv_contents.setText(arrayList.get(position).getContents());
     }
 
     @Override
@@ -49,25 +49,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             super(itemView);
 
             this.tv_title = itemView.findViewById(R.id.tv_title);
-//            this.tv_contents = itemView.findViewById(R.id.tv_contents);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int currentPosition = getAdapterPosition(); // 클릭 포지션을 가져옴
-                    Post post = arrayList.get(currentPosition); // 클릭된 포지션의 아이템을 가져옴
-
-                    title = post.getTitle();
-                    content = post.getContents();
-                    Uid = post.getUid();
-
-                    Intent intent = new Intent(view.getContext(), ViewPost.class);
-                    intent.putExtra("title", title);
-                    intent.putExtra("content", content);
-                    intent.putExtra("writer", Uid);
-                    context.startActivity(intent);
-                }
-            });
+            this.tv_contents = itemView.findViewById(R.id.tv_contents);
         }
     }
 }

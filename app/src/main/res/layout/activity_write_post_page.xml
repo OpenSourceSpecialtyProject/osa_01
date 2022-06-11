@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".RegisterActivity">
+    tools:context=".WritePostPage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,8 +16,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
             android:textColor="@color/black"
+            android:fontFamily="@font/jua_regular"
             android:textSize="20dp"
             android:text="제목"/>
 
@@ -27,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/jua_regular"
             android:background="@drawable/border"
             android:hint="제목을 입력하세요."
             />
@@ -35,10 +39,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:fontFamily="@font/jua_regular"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="게시글 내용"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        android:text="내용"/>
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/content_et"
@@ -46,8 +52,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:fontFamily="@font/jua_regular"
         android:background="@drawable/border"
-        android:hint="내용을 입력하세요."
+        android:hint="게시글 내용을 입력하세요."
         />
 
     <Button
@@ -55,6 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="등록하기"
+        android:fontFamily="@font/jua_regular"
         android:padding="10dp"
         android:textColor="#FFFFFF"
         android:backgroundTint="#A9C5DB"/>
