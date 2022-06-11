@@ -54,7 +54,7 @@ public class BoardInfoActivity extends AppCompatActivity {
                 Board board = snapshot.getValue(Board.class);
                 tv_item_title.setText(board.getTitle());
                 tv_item_contents.setText(board.getContents());
-                tv_uid.setText(board.getUid());
+                tv_uid.setText("작성자: " + board.getUid());
                 host_id = board.getUid();
 
                 if(Uid.equals(board.getUid())){

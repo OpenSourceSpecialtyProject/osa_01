@@ -36,7 +36,7 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
     @Override
     public void onBindViewHolder(@NonNull BoardViewHolder holder, int position) {
         //holder.bd_UId.setText(arrayList.get(position).getUid());
-        holder.bd_contents.setText(arrayList.get(position).getContents());
+        //holder.bd_contents.setText(arrayList.get(position).getContents());
         holder.bd_title.setText(arrayList.get(position).getTitle());
     }
 
@@ -47,14 +47,14 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
 
     public class BoardViewHolder extends RecyclerView.ViewHolder {
         TextView bd_UId;
-        TextView bd_contents;
+        //TextView bd_contents;
         TextView bd_title;
 
         public BoardViewHolder(@NonNull View itemView) {
             super(itemView);
             //아이템뷰에 가져오기
             //this.bd_UId = itemView.findViewById(R.id.bd_hostID);
-            this.bd_contents = itemView.findViewById(R.id.bd_contents);
+            //this.bd_contents = itemView.findViewById(R.id.bd_contents);
             this.bd_title = itemView.findViewById(R.id.bd_title);
 
             itemView.setOnClickListener(new View.OnClickListener() {

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Osa_01">
         <activity
+            android:name=".TempActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatMain"
+            android:exported="false"></activity>
+        <activity
             android:name=".ApplicantManagement"
             android:exported="false" />
         <activity
@@ -35,15 +41,13 @@
             android:exported="false" />
         <activity
             android:name=".ViewPost"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".WritePostPage"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".LoginPage"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,4 +55,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

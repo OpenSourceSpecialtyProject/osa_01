@@ -30,6 +30,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="새로고침"
+        android:fontFamily="@font/jua_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,6 +42,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Title"
+        android:fontFamily="@font/jua_regular"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toStartOf="@+id/btn_search"
@@ -55,6 +57,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="검색"
+        android:fontFamily="@font/jua_regular"
         app:layout_constraintEnd_toStartOf="@+id/btn_refresh"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,6 +70,7 @@
         android:layout_marginEnd="343dp"
         android:text="글 목록"
         android:textSize="20sp"
+        android:fontFamily="@font/jua_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_search" />
