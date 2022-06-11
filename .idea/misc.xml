@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.459" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/drawable/ic_launcher_background.xml" value="0.459" />
         <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/font/font.xml" value="0.5748717948717949" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_community_page.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_join_page.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_main.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_recruiting_page.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_view_post.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_write_post_page.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/applicant_item.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/board_item.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/MWG/AndroidStudioProjects/osa_01/app/src/main/res/layout/item_post.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/drawable-v24/buttonshape.xml" value="0.252" />
         <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/drawable/border.xml" value="0.248" />
         <entry key="..\:/Users/joonw/AndroidStudioProjects/osa_01/app/src/main/res/layout/activity_applicant_management.xml" value="0.25364583333333335" />
