@@ -16,10 +16,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
             android:textColor="@color/black"
             android:textSize="16dp"
-            android:text="컨텐츠 제목"/>
+            android:fontFamily="@font/jua_regular"
+            android:text="제목"/>
 
         <EditText
             android:id="@+id/title"
@@ -28,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/border"
+            android:fontFamily="@font/jua_regular"
             android:hint="컨텐츠 제목을 입력하세요."
             />
     </LinearLayout>
@@ -35,9 +39,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
         android:textColor="@color/black"
         android:textSize="16dp"
+        android:fontFamily="@font/jua_regular"
         android:text="컨텐츠 내용"/>
     <EditText
         android:id="@+id/contents"
@@ -46,6 +52,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
+        android:fontFamily="@font/jua_regular"
         android:hint="컨텐츠 내용을 입력하세요."
         />
     <Button
@@ -55,5 +62,6 @@
         android:text="등록하기"
         android:padding="10dp"
         android:textColor="#FFFFFF"
+        android:fontFamily="@font/jua_regular"
         android:backgroundTint="#A9C5DB"/>
 </LinearLayout>
