@@ -20,44 +20,55 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-//마이메뉴 내가 만든 파티보는 액티비티
-public class Mymenu extends AppCompatActivity {
+
+//마이메뉴에서 나의 신청현황 보는 액티비티
+public class MymenuApply extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<Board> arrayList2;
+    private ArrayList<Apply> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mymenu);
+        setContentView(R.layout.activity_mymenu_apply);
 
-        recyclerView = findViewById(R.id.recyclerView_mymenu);
+        recyclerView = findViewById(R.id.recyclerView_mymenu_apply);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        arrayList2 = new ArrayList<>();  //
+        arrayList = new ArrayList<>();  //
 
-        database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference().child("Firebase").child("Board");
 
         FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();   //현재 로그인한 유저 정보 가져옴
         String Uid = mUser.getEmail();
+
+        database = FirebaseDatabase.getInstance();
+        databaseReference = database.getReference().child("Apply");
+
+
+        Button button2 = findViewById(R.id.button_party2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),Mymenu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         databaseReference.addValueEventListener(new ValueEventListener() {  //addValue리스너로 값바뀔때마다 새로고침
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 //파베 디비 데이터 받는 단계
-                arrayList2.clear();      //찌꺼지 치우기
+                arrayList.clear();      //찌꺼지 치우기
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    Board board = snapshot.getValue(Board.class);  //디비에서 데이터 가져와서 Board객체로 담음
-                    //arrayList2.add(board);       //가져온 친구 배열리스트에 추가 후 리사이클러뷰로 보낼 준비
-                    String Board_Uid = board.getUid();                //가져온 데이터 제목 비교위함
+                    Apply apply = snapshot.getValue(Apply.class);  //디비에서 데이터 가져와서 Board객체로 담음
 
-                    if(Uid.equals(Board_Uid)){            //contains로 입력문자열이 포함되어있다면
-                        arrayList2.add(board);       //가져온 친구 배열리스트에 추가 후 리사이클러뷰로 보낼 준비
+                    if(Uid.equals(apply.getApplicant())) {
+                        arrayList.add(apply);
                     }
                 }
                 adapter.notifyDataSetChanged(); //리스트 저장 및 새로고침
@@ -69,17 +80,9 @@ public class Mymenu extends AppCompatActivity {
             }
         });
 
-        Button button2 = findViewById(R.id.button_apply);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MymenuApply.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
-        adapter = new ApplicantAdapter(arrayList2,this);     //어댑터 생성,무슨 어댑터 쓸건지 고르는거네
+
+        adapter = new ApplyAdapter(arrayList,this);     //어댑터 생성,무슨 어댑터 쓸건지 고르는거네
         recyclerView.setAdapter(adapter);       //생성 어댑터 리사이클러뷰로 쏴주기
     }
 }

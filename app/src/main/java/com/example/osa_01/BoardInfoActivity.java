@@ -56,6 +56,7 @@ public class BoardInfoActivity extends AppCompatActivity {
                 tv_item_contents.setText(board.getContents());
                 tv_uid.setText("작성자: " + board.getUid());
                 host_id = board.getUid();
+                title = board.getTitle();
 
                 if(Uid.equals(board.getUid())){
                     btn_apply.setVisibility(View.INVISIBLE);
@@ -96,9 +97,11 @@ public class BoardInfoActivity extends AppCompatActivity {
                 int board_num = Integer.parseInt(t1);
 
                 Applicant applicant = new Applicant(host_id, board_num);
+                Apply apply = new Apply(title, Uid, host_id);
                 databaseReference.child("Firebase").child("Board").child(t1).child("applicant").push().setValue(Uid);
                 databaseReference.child("Firebase").child("Applicant").child(t1).setValue(applicant);
                 databaseReference.child("Firebase").child("Applicant").child(t1).child("list").push().setValue(Uid);
+                databaseReference.child("Apply").push().setValue(apply);
             }
         });
     }
