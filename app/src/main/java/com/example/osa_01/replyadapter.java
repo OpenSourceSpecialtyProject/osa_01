@@ -26,14 +26,14 @@ public class replyadapter extends RecyclerView.Adapter<replyadapter.PostViewHold
     @NonNull
     @Override
     public PostViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) { // 실제 리스트뷰가 연결이됫을때 뷰홀더 생성
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_reply,parent,false);
         PostViewHolder holder = new PostViewHolder(view);
         return holder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull PostViewHolder holder, int position) { // 각 아이템에 대한 실질적인 매칭
-        holder.tv_title.setText(arrayList.get(position).getTitle());
+        holder.tv_title.setText("작성자: " + arrayList.get(position).getTitle());
         holder.tv_contents.setText(arrayList.get(position).getContents());
     }
 
