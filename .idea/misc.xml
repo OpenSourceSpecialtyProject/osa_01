@@ -55,29 +55,20 @@
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_main_chat.xml" value="0.209375" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_mymenu.xml" value="0.25364583333333335" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_mymenu_apply.xml" value="0.2222222222222222" />
-
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_recruiting_page.xml" value="0.264" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_temp.xml" value="0.2390625" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_test.xml" value="0.176" />
-
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_view_post.xml" value="0.209375" />
-
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/activity_write_post_page.xml" value="0.209375" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/applicant_item.xml" value="0.2526041666666667" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/applicant_management.xml" value="0.2526041666666667" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/board_item.xml" value="0.264" />
-
-        <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/item_post.xml" value="0.209375" />
-        <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/mymenu.xml" value="0.2526041666666667" />
-        <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/mymenu_item.xml" value="0.2526041666666667" />
-
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/chat_item.xml" value="0.2526041666666667" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/item_post.xml" value="0.209375" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/messages_adapter_layout.xml" value="0.20833333333333334" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/mymenu.xml" value="0.2526041666666667" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/mymenu_item.xml" value="0.2526041666666667" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/temp_layout.xml" value="0.264" />
-
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/test_item.xml" value="0.2526041666666667" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/test_list.xml" value="0.20833333333333334" />
         <entry key="..\:/android_workspace/osa_01/app/src/main/res/layout/test_main.xml" value="0.2526041666666667" />
@@ -89,6 +80,7 @@
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_join_page.xml" value="0.2" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_login_page.xml" value="0.22887323943661972" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_mymenu_apply.xml" value="0.19701086956521738" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_recruiting_page.xml" value="0.1" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_view_post.xml" value="0.25364583333333335" />
         <entry key="..\:/user/osa_01/app/src/main/res/layout/activity_write_post_page.xml" value="0.25364583333333335" />

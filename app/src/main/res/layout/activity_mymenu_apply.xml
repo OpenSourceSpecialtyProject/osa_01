@@ -11,6 +11,7 @@
         android:id="@+id/recyclerView_mymenu_apply"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fontFamily="@font/jua_regular"
         android:layout_marginTop="80dp"/>
 
     <Button
@@ -23,6 +24,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button_apply2"
         app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/jua_regular"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -35,5 +37,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toEndOf="@+id/button_party2"
+        android:fontFamily="@font/jua_regular"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
