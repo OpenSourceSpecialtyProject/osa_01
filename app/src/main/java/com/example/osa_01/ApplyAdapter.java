@@ -1,6 +1,7 @@
 package com.example.osa_01;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,25 @@ public class ApplyAdapter extends RecyclerView.Adapter<ApplyAdapter.ApplyViewHol
         public ApplyViewHolder(@NonNull View itemView) {
             super(itemView);
             this.menu_board_title = itemView.findViewById(R.id.menu_board_title);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                //private boolean et_artName;   //리사이클러뷰 클릭이벤트 처리 메소드
+                @Override
+                public void onClick(View v) {
+                    //int currentPos = getAbsoluteAdapterPosition(); //각 어댑터의 위치 클릭된
+                    //Board board = arrayList2.get(currentPos);
+
+                    Intent intent =  new Intent(context, ChatMain.class);   //화면 넘겨주기
+                    //intent.putExtra("board_num", String.valueOf(board.getBoard_number()));
+
+                    context.startActivity(intent);
+
+                    /*
+                    Toast.makeText(context, board.getTitle() +
+                            "\n" + board.getContents()
+                            , Toast.LENGTH_SHORT).show();*/   //해당위치 아이템 클릭시 토스트메시지창 띄우기
+                }
+            });
         }
     }
 }
