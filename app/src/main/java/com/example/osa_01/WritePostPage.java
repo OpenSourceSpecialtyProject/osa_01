@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -48,7 +49,7 @@ public class WritePostPage extends AppCompatActivity  {
         Post post = new Post(mUser.getEmail(),title,contents);
 
         DatabaseRef.child(mUser.getUid()).setValue(post);
-
+        Toast.makeText(WritePostPage.this, "등록되었습니다.", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getApplicationContext(),CommunityPage.class); //
         startActivityForResult(intent,333);
     }

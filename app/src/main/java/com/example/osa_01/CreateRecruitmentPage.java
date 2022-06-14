@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -20,6 +22,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+
+import java.util.concurrent.RecursiveAction;
 
 public class CreateRecruitmentPage extends AppCompatActivity {
     private DatabaseReference mDatabaseRef;
@@ -74,7 +78,9 @@ public class CreateRecruitmentPage extends AppCompatActivity {
             public void onClick(View view) {
                 String title = edttitle.getText().toString();       //글제목, 내용 받아옴
                 String contents = edtcontents.getText().toString();
-
+                Toast.makeText(CreateRecruitmentPage.this, "등록되었습니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), RecruitingPage.class); //
+                startActivityForResult(intent,333);
                 writeNewBoard(title, contents);     //인원모집 글 실행
             }
         });
@@ -84,7 +90,6 @@ public class CreateRecruitmentPage extends AppCompatActivity {
         FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();   //현재 로그인한 유저 정보 가져옴
         int number = board_num+1;                       //게시글 분류를 위한 고유번호
         Board board = new Board(mUser.getEmail(), title, contents, number);         //게시판 객체 생성
-
 
         String num = String.valueOf(number);            //해당 게시글 db올리기위해서 문자열로 변환
         mDatabaseRef.child("Board").child(num).setValue(board);  //Board 아래 게시판넘버(사용자고유토큰-예전)로 구분해서 글 생성
