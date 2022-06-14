@@ -5,8 +5,12 @@
 
     <TextView
         android:id="@+id/menu_board_title"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_margin="5dp"/>
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/jua_regular"
+        android:background="@drawable/border"
+        android:layout_margin="2dp"/>
 
 </LinearLayout>

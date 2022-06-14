@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DBE0FF"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/temp1"
         android:layout_marginTop="20dp"
+        android:background="@drawable/border"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -15,6 +17,7 @@
             android:layout_height="80dp"
             android:textStyle="bold"
             android:textSize="18sp"
+            android:fontFamily="@font/jua_regular"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="test1234@naver.com"/>
@@ -25,12 +28,14 @@
                 android:id="@+id/btn1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:fontFamily="@font/jua_regular"
                 android:text="확정"/>
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/temp2"
+        android:background="@drawable/border"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -40,6 +45,7 @@
             android:layout_marginLeft="20dp"
             android:textStyle="bold"
             android:textSize="18sp"
+            android:fontFamily="@font/jua_regular"
             android:gravity="center_vertical"
             android:text="min1234@naver.com"/>
         <LinearLayout
@@ -49,6 +55,7 @@
                 android:id="@+id/btn2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:fontFamily="@font/jua_regular"
                 android:text="확정"/>
         </LinearLayout>
     </LinearLayout>
