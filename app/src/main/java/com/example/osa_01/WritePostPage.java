@@ -39,6 +39,9 @@ public class WritePostPage extends AppCompatActivity  {
                 String contents = Contents.getText().toString();
 
                 WritePost(title,contents);
+                Intent intent = new Intent(getApplicationContext(),CommunityPage.class); //
+                startActivity(intent);
+                finish();
             }
         });
 

@@ -39,6 +39,7 @@
         android:id="@+id/viewPostContents"
         android:layout_width="match_parent"
         android:layout_height="207dp"
+        android:padding="5dp"
         android:textSize="20sp"
         android:fontFamily="@font/jua_regular"
         app:layout_constraintBottom_toTopOf="@+id/replyRecycler"

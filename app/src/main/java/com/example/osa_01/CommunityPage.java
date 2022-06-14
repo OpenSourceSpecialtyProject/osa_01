@@ -42,6 +42,7 @@ public class CommunityPage extends AppCompatActivity  {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),WritePostPage.class); //버튼 클릭시
                 startActivityForResult(intent,222);
+                finish();
             }
         });
 
@@ -76,6 +77,10 @@ public class CommunityPage extends AppCompatActivity  {
 
         adapter = new PostAdapter(arrayList, this);
         recyclerView.setAdapter(adapter);//리사이클러뷰에 어뎁터 연결
+    }
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 
 }
