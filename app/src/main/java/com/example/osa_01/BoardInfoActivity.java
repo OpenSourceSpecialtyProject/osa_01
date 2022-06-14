@@ -102,6 +102,11 @@ public class BoardInfoActivity extends AppCompatActivity {
                 databaseReference.child("Firebase").child("Applicant").child(t1).setValue(applicant);
                 databaseReference.child("Firebase").child("Applicant").child(t1).child("list").push().setValue(Uid);
                 databaseReference.child("Apply").push().setValue(apply);
+
+                Toast.makeText(BoardInfoActivity.this, "신청완료!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), RecruitingPage.class); //
+                startActivity(intent);
+                finish();
             }
         });
     }
