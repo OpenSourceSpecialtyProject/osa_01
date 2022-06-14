@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class TempActivity extends AppCompatActivity {
 
@@ -42,6 +43,7 @@ public class TempActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(TempActivity.this, "확정되었습니다.", Toast.LENGTH_SHORT).show();
                 temp1.setVisibility(View.INVISIBLE);
             }
         });
@@ -49,6 +51,7 @@ public class TempActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(TempActivity.this, "확정되었습니다.", Toast.LENGTH_SHORT).show();
                 temp2.setVisibility(View.INVISIBLE);
             }
         });

@@ -90,7 +90,6 @@ public class BoardInfoActivity extends AppCompatActivity {
             }
         });
 
-
         btn_apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
