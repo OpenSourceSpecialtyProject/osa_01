@@ -80,8 +80,11 @@ public class CreateRecruitmentPage extends AppCompatActivity {
                 String contents = edtcontents.getText().toString();
                 Toast.makeText(CreateRecruitmentPage.this, "등록되었습니다.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), RecruitingPage.class); //
-                startActivityForResult(intent,333);
+                //startActivityForResult(intent,333);
                 writeNewBoard(title, contents);     //인원모집 글 실행
+                //Intent intent = new Intent(getApplicationContext(),CreateRecruitmentPage.class); //
+                startActivity(intent);
+                finish();
             }
         });
     }

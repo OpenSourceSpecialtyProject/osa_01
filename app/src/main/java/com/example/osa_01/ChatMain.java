@@ -99,7 +99,10 @@ public class ChatMain extends AppCompatActivity {
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
+                //Log.d("ChatCHat",snapshot.getValue().toString());
+                Chat chat = snapshot.getValue(Chat.class);      //클래스를 담아옴
+                ((ChatAdapter)mAdapter).addChat(chat);
+                mRecyclerView.scrollToPosition(mAdapter.getItemCount()-1);
             }
 
             @Override

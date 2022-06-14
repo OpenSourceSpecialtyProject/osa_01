@@ -76,6 +76,7 @@ public class RecruitingPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),CreateRecruitmentPage.class); //
                 startActivity(intent);
+                finish();
             }
         });
 
